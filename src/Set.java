@@ -1,15 +1,15 @@
 import java.util.ArrayList;
 
 public class Set {
-    private ArrayList<Clothing> pieces;
+    private ArrayList<Item> pieces;
     private ArrayList<String> usages;
 
-    public ArrayList<Clothing> getPieces() {
+    public ArrayList<Item> getPieces() {
         return pieces;
     }
 
-    public void setPieces(Clothing clothing) {
-        pieces.add(clothing);
+    public void setPieces(Item item) {
+        pieces.add(item);
     }
 
     public ArrayList<String> getUsages() {

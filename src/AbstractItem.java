@@ -1,14 +1,19 @@
 public abstract class AbstractItem {
-    protected String type;
+    protected String name;
     protected String color;
     protected String size;
     protected String origin_shop;
     protected String purchase_date;
     protected String conservation; // excelente, boa etc
+    protected String image_path;
     protected boolean lending_warning;
     protected boolean available;
 
     //region Getters and Setters
+    public String getName() { return name; }
+
+    public void setName(String name) { this.name = name; }
+
     public String getColor() {
         return color;
     }
@@ -48,6 +53,10 @@ public abstract class AbstractItem {
     public void setConservation(String conservation) {
         this.conservation = conservation;
     }
+
+    public String getImage_path() { return image_path; }
+
+    public void setImage_path(String image_path) { this.image_path = image_path; }
 
     public boolean isLending_warning() {
         return lending_warning;
